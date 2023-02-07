@@ -1,0 +1,36 @@
+.about {
+  padding: 120px 0;
+  background-color: $bg;
+  text-align: center;
+
+  &-heading-desc {
+    padding: 30px 0 120px 0;
+  }
+
+  &-card {
+
+    &-items {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: start;
+
+      &:nth-child(even) {
+        flex-direction: row-reverse;
+      }
+    }
+
+    &-list-item {
+      display: flex;
+      align-items: flex-start;
+      width: 437px;
+      max-width: 100%;
+      gap: 13px;
+
+
+      & .item-content>p {
+        padding: 10px 0 30px;
+      }
+    }
+  }
+}

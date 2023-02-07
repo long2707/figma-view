@@ -1,0 +1,35 @@
+.footer {
+  background-color: #292F3A;
+
+  &-container {
+    padding: 105px 0 27px;
+  }
+
+  &-section {
+    &-list {
+      display: flex;
+      justify-content: space-between;
+    }
+
+
+    & .logo-title {
+      font-family: $font-secondary;
+      font-size: 24px;
+      line-height: calc(34 / 24);
+      color: $bg-white;
+    }
+  }
+
+  &-logo {
+    display: flex;
+    gap: 10px;
+  }
+
+  &-line {
+    background: #7B88A8;
+    width: 100%;
+    height: 1px;
+    margin: 100px 0 27px;
+  }
+
+}

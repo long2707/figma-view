@@ -1,0 +1,31 @@
+.cta {
+  position: relative;
+  background-color: $bg;
+  margin-bottom: 144px;
+
+  &-shapes {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &-container {
+    padding: 106px 0;
+    text-align: center;
+    width: 870px;
+  }
+
+  &-text {
+    margin: 30px 0 60px;
+  }
+
+  &-link {
+    background-color: $bg-primary;
+    padding: 15px 32px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 5px;
+  }
+}

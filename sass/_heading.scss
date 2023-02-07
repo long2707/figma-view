@@ -1,0 +1,51 @@
+.heading {
+  font-family: $font-secondary;
+  color: $text-secondary;
+  font-weight: 500;
+
+  &--xxl {
+    font-size: 72px;
+    line-height: calc(78 / 72);
+  }
+
+  &--xl {
+    font-size: 64px;
+    line-height: calc(78 / 72);
+  }
+
+  &--lg {
+    font-size: 48px;
+    line-height: calc(56 / 48);
+  }
+
+  &--md {
+    font-size: 36px;
+    line-height: calc(46 / 36);
+  }
+
+  &-sm {
+    font-size: 18px;
+    line-height: calc(28 / 18);
+  }
+}
+
+.text {
+  font-family: $font-primary;
+  font-size: 18px;
+  line-height: calc(28 / 18);
+
+  &-xs {
+    font-size: 15px;
+    line-height: calc(24 / 15);
+  }
+
+  &-sm {
+    font-size: 16px;
+    line-height: calc(26 / 16);
+  }
+
+  &-lg {
+    font-size: 22px;
+    line-height: calc(32 / 22);
+  }
+}

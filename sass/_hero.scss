@@ -1,0 +1,111 @@
+.hero {
+  position: relative;
+  background-color: $bg;
+  // padding: 150px 0 230px 0;
+  height: 950px;
+  max-height: 100%;
+
+  &-shapes {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  &-content {
+    max-width: 770px;
+    width: 100%;
+  }
+
+  &-title {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    &>span {
+      background-image: linear-gradient(91.79deg, #857FFF 32.21%, #FFC0EC 83.79%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  &-desc {
+    margin: 40px 0 70px 0;
+
+  }
+
+  &-links {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    &-startes {
+      background-color: $bg-primary;
+      border-radius: 5px;
+      padding: 18px 32px;
+      text-transform: uppercase;
+      color: #fff;
+      box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+    }
+
+    &-play {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+
+      &-icon {
+        background-color: $bg-white;
+        width: 52px;
+        height: 52px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+      }
+
+      &-text {
+        color: #000;
+        text-transform: uppercase;
+        font-weight: 500;
+      }
+    }
+  }
+
+  &-scroll {
+
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+
+    &-inner {
+      width: 80px;
+      height: 80px;
+      background-color: $yellow;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0px 5px 20px rgba(18, 2, 47, 0.15);
+      animation: scroll-inner 1s linear infinite alternate;
+    }
+  }
+}
+
+@keyframes scroll-inner {
+  0% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(10px);
+  }
+}
